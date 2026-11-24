@@ -1,3 +1,17 @@
-# Debate
-MicWars is a next-generation battle arena web application built for public speakers, debaters, poets, and storytellers. Compete 1v1 live or via recorded pitch, get judged by certified experts and the live audience, and cash out your winnings instantly.
-MicWars — Ultimate speech, debate, poetry, and storytelling 1v1 battle arena featuring a cyber-themed authentication portal, live lobby, and persistent session routing.
+# MicWars v0.2 — Termux Quick Start
+
+1. Extract this ZIP inside Termux home directory (never run `npm install` directly inside `/sdcard`):
+   ```bash
+   termux-setup-storage
+   cp ~/storage/downloads/micwars-v0.2-platform.zip ~
+   cd ~
+   unzip micwars-v0.2-platform.zip
+   cd micwars
+   ```
+2. Install dependencies and start the server:
+   ```bash
+   pkg install nodejs-lts -y
+   npm install
+   npm run dev
+   ```
+3. Open `http://localhost:5173` in your Android browser.
